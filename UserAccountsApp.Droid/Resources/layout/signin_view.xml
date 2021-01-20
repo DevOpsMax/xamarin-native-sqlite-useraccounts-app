@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="150px">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginLeft="75px"
+        android:layout_marginRight="75px">
+        <TextView
+            android:text="@string/text_signin"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginBottom="75px"
+            android:id="@+id/txtViewSignIn" />        
+        <EditText
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="50px"
+            android:minHeight="50px"            
+            android:hint="@string/hint_username"
+            android:id="@+id/txtUsername" 
+            android:layout_marginBottom="50px"
+            local:MvxBind="Text Username" />
+        <EditText
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="50px"
+            android:minHeight="50px"
+            android:hint="@string/hint_password"
+            android:id="@+id/txtPassword" 
+            android:layout_marginBottom="100px"
+            local:MvxBind="Text Password"/>
+        <Button
+            android:text="@string/text_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSignIn"
+            android:layout_marginBottom="25px"
+            local:MvxBind="Click SignInCommand"/>
+        <Button
+            android:text="@string/text_createaccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCreateAccount"
+            local:MvxBind="Click CreateAccountCommand"/>
+        <TextView
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/holo_red_dark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="25px"
+            android:id="@+id/txtViewError"
+            local:MvxBind="Text ErrorMessage"/>
+    </LinearLayout>
+</LinearLayout>

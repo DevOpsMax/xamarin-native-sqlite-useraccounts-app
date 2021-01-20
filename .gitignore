@@ -1,0 +1,11 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/UserAccountsApp.Core/bin/Debug/netstandard2.0
+/UserAccountsApp.Core/obj
+/UserAccountsApp.Core.Tests/bin/Debug
+/UserAccountsApp.Core.Tests/obj/Debug
+/UserAccountsApp.Droid/bin/Debug
+/UserAccountsApp.Droid/obj

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_margin="75px">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/text_success"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textAlignment="center"
+            android:layout_marginBottom="25px"/>
+        <ImageView
+            android:src="@drawable/checkmark"
+            local:MvxBind="ContentDescription AccountCreationSuccessMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgCheckMark" 
+            android:adjustViewBounds="true"
+            android:maxHeight="500px"
+            android:maxWidth="500px"
+            android:layout_marginBottom="25px"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            local:MvxBind="Text AccountCreationSuccessMessage"
+            android:textAlignment="center"
+            android:layout_marginBottom="100px"/>
+        <Button
+            android:text="@string/text_loginnow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnGoToLogin"
+            local:MvxBind="Click ContinueCommand"/>
+    </LinearLayout>
+</LinearLayout>
